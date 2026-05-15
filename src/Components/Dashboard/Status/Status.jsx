@@ -1,5 +1,5 @@
 
-import CardStatus from "../../UI/CardStatus";
+import CardStatus from "../../UI/CardStatus/CardStatus";
 function Status() {
     return (
         <section className="py-4">

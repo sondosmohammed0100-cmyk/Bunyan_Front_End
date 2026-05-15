@@ -5,7 +5,7 @@ function Sidebar() {
     { icon: "fa-chart-bar", title: "Status", path: "/" },
     { icon: "fa-users", title: "Users Management", path: "/users" },
     { icon: "fa-diagram-project", title: "Projects Management", path: "/projects" },
-    { icon: "fa-laptop-code", title: "Developers Management" },
+    { icon: "fa-laptop-code", title: "Developers Management",path:'/developers' },
     { icon: "fa-users", title: "Cms" },
     { icon: "fa-message", title: "Live Chat" },
   ];
