@@ -1,0 +1,10 @@
+footer {
+  background-color: var(--main-color);
+  height: 50px;
+  color: #fff;
+}
+
+footer span {
+  opacity: 0.9;
+  font-size: 1rem;
+}

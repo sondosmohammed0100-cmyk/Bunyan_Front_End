@@ -1,0 +1,16 @@
+.sidebar {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  width: 250px;
+}
+
+.navItem {
+  cursor: pointer;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: var(--whit-color);
+}
+
+.navItem:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
