@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Sidebar.module.css";
-function Sidebar() {
+function Sidebar({isTyping}) {
   const links = [
     { icon: "fa-chart-bar", title: "Status", path: "/" },
     { icon: "fa-users", title: "Users Management", path: "/users" },
@@ -22,7 +22,13 @@ function Sidebar() {
             key={index}
           >
             <i className={`fa-solid ${item.icon} fs-5`}></i>
+
             <span className="fs-5">{item.title}</span>
+            {item.path === "/users"&& isTyping && (
+              <span className="badge bg-primary text-dark">
+                Typing
+              </span>
+            )}
           </NavLink>
         ))}
       </nav>

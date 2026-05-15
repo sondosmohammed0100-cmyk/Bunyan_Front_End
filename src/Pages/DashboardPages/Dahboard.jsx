@@ -8,19 +8,20 @@ import Projects from "./Projects";
 import Developers from './Developers'
 import TableDashboard from "../../Components/UI/TableDashboard/TableDashboard";
 import FormDashboard from "../../Components/UI/FormDashboard/FormDashboard";
-
+import { useState } from "react";
 function Dashboard() {
+  const [isTyping,setIsTyping]=useState(false);
   return (
     <>
       <Navbar adminName="Mohamed" />
       <div className="d-flex">
-        <Sidebar />
+        <Sidebar isTyping={isTyping} />
         <main className="flex-grow-1">
           <Routes>
             <Route path="/" element={<StatusPage />} />
             <Route path="/users" element={<Users />} >
               <Route index element={<TableDashboard header='Users' addbtn="User" />} />
-              <Route path="add" element={<FormDashboard />} />
+              <Route path="add" element={<FormDashboard  setIsTyping={setIsTyping}/>} />
 
             </Route>
 
